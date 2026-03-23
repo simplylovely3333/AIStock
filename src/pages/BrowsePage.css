@@ -1,0 +1,103 @@
+.browse-page__top {
+  padding: 120px 0 32px;
+  background: linear-gradient(180deg, var(--clr-bg-2) 0%, var(--clr-bg) 100%);
+  border-bottom: 1px solid var(--clr-border);
+  margin-bottom: 32px;
+}
+.browse-page__header {
+  display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;
+}
+.browse-page__header h1 { font-size: 2rem; }
+.browse-page__count { color: var(--clr-text-2); font-size: 0.9rem; }
+.browse-cats { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.ai-result-label {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.ai-result-label h1 { margin: 0 !important; }
+.ai-prompt-tag {
+  background: rgba(124,92,252,0.1); color: var(--clr-primary-2);
+  padding: 4px 12px; border-radius: 100px; font-size: 0.9rem;
+  font-weight: 600; border: 1px solid rgba(124,92,252,0.2);
+}
+
+.browse-page__body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+  padding-bottom: 80px;
+}
+
+/* Sidebar */
+.browse-sidebar {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg);
+  padding: 20px;
+  position: sticky; top: 90px;
+  display: flex; flex-direction: column; gap: 20px;
+}
+.browse-sidebar__header {
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: 600; font-size: 0.9rem;
+}
+.browse-clear {
+  display: flex; align-items: center; gap: 4px;
+  color: var(--clr-accent-2); font-size: 0.75rem; font-weight: 600;
+  cursor: pointer; transition: opacity var(--t-fast);
+}
+.browse-clear:hover { opacity: 0.7; }
+
+.filter-group { display: flex; flex-direction: column; gap: 8px; }
+.filter-label { font-size: 0.8rem; font-weight: 600; color: var(--clr-text-2); text-transform: uppercase; letter-spacing: 0.05em; }
+.filter-search { position: relative; }
+.filter-search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--clr-text-3); }
+.filter-search .input { padding-left: 36px; }
+.filter-check { display: flex; align-items: center; gap: 8px; font-size: 0.87rem; cursor: pointer; }
+.filter-check input[type=checkbox] { accent-color: var(--clr-primary); width: 15px; height: 15px; }
+.filter-ratings { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* Toolbar */
+.browse-toolbar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px; gap: 12px;
+}
+.browse-filter-toggle { display: none; }
+.browse-filter-toggle-mobile { display: none; }
+.browse-sort { display: flex; align-items: center; gap: 8px; position: relative; }
+.browse-sort-select {
+  width: auto; padding-right: 32px; appearance: none; cursor: pointer;
+}
+.browse-sort-icon {
+  position: absolute; right: 10px; top: 50%;
+  transform: translateY(-50%); pointer-events: none; color: var(--clr-text-3);
+}
+
+.browse-empty {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 12px; padding: 80px 0; text-align: center; color: var(--clr-text-2);
+}
+
+@media (max-width: 900px) {
+  .browse-page__top { padding: 100px 0 24px; margin-bottom: 24px; }
+  .browse-page__body { grid-template-columns: 1fr; gap: 24px; }
+  .browse-sidebar {
+    position: fixed; top: 0; left: 0; bottom: 0; width: 100%; max-width: 320px;
+    z-index: 2000; border-radius: 0; transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+    display: flex; background: rgba(10, 10, 20, 0.98); backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(124,92,252,0.3); padding: 32px 24px;
+    box-shadow: 20px 0 60px rgba(0,0,0,0.8);
+  }
+  .browse-sidebar--open { transform: translateX(0); }
+  .browse-filter-toggle-mobile { display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
+  .browse-page__header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .browse-page__header h1 { font-size: 1.6rem; }
+  .browse-toolbar { 
+    background: rgba(255,255,255,0.03); padding: 12px; border-radius: var(--r-md);
+    flex-wrap: wrap;
+  }
+  .browse-sort { width: 100%; justify-content: space-between; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.05); }
+}

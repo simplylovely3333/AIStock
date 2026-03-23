@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+aiosqlite
+pydantic
+pydantic-settings
+passlib[bcrypt]
+PyJWT
+python-jose[cryptography]
+python-multipart
+groq
+python-dotenv
+alembic
+google-auth

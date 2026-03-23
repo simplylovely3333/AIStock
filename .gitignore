@@ -1,0 +1,11 @@
+node_modules
+.env
+backend/.env
+__pycache__
+*.pyc
+*.db
+backend_run.log
+frontend_run.log
+dist
+.vscode
+.DS_Store

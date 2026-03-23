@@ -1,0 +1,710 @@
+INFO:     Will watch for changes in these directories: ['/Users/macbook/.gemini/antigravity/scratch/ai-asset-marketplace/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [18727] using StatReload
+INFO:     Started server process [18732]
+INFO:     Waiting for application startup.
+2026-03-21 22:08:15,456 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:08:15,456 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2026-03-21 22:08:15,456 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:08:15,457 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("subscriptions")
+2026-03-21 22:08:15,458 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:08:15,458 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("assets")
+2026-03-21 22:08:15,458 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:08:15,459 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("transactions")
+2026-03-21 22:08:15,459 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:08:15,460 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("purchases")
+2026-03-21 22:08:15,460 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:08:15,461 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58226 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:09:35,791 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:35,846 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:09:35,846 INFO sqlalchemy.engine.Engine [generated in 0.00086s] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:58228 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58227 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:09:35,890 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:09:35,893 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:35,893 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:09:35,894 INFO sqlalchemy.engine.Engine [cached since 0.04812s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:58229 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:09:35,908 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:09:36,215 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:36,220 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:36,221 INFO sqlalchemy.engine.Engine [generated in 0.00074s] ()
+INFO:     127.0.0.1:58234 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:36,227 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:09:36,231 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:36,232 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:36,232 INFO sqlalchemy.engine.Engine [cached since 0.01209s ago] ()
+INFO:     127.0.0.1:58235 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:36,236 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:58296 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58298 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:09:50,956 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:50,956 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:50,957 INFO sqlalchemy.engine.Engine [cached since 14.74s ago] ()
+INFO:     127.0.0.1:58300 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:50,978 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:09:51,010 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:51,010 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:51,010 INFO sqlalchemy.engine.Engine [cached since 14.79s ago] ()
+INFO:     127.0.0.1:58301 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:51,014 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:58314 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58316 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:09:53,725 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:53,726 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:53,726 INFO sqlalchemy.engine.Engine [cached since 17.51s ago] ()
+INFO:     127.0.0.1:58301 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:53,735 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:09:53,737 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:53,738 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:53,738 INFO sqlalchemy.engine.Engine [cached since 17.52s ago] ()
+INFO:     127.0.0.1:58300 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:53,756 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:58327 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:09:55,495 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:55,496 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:55,496 INFO sqlalchemy.engine.Engine [cached since 19.28s ago] ()
+INFO:     127.0.0.1:58328 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58300 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:55,515 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:09:55,521 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:09:55,521 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:09:55,522 INFO sqlalchemy.engine.Engine [cached since 19.3s ago] ()
+INFO:     127.0.0.1:58301 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:09:55,535 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:10:18,529 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:18,531 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:10:18,531 INFO sqlalchemy.engine.Engine [cached since 42.68s ago] ('bekaadburaimov@gmail.com',)
+2026-03-21 22:10:18,536 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     127.0.0.1:58426 - "POST /api/auth/oauth HTTP/1.1" 200 OK
+2026-03-21 22:10:18,547 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:18,548 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:10:18,548 INFO sqlalchemy.engine.Engine [cached since 42.7s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:58428 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:10:18,551 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:58431 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:10:18,687 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:18,687 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:10:18,687 INFO sqlalchemy.engine.Engine [cached since 42.47s ago] ()
+INFO:     127.0.0.1:58434 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58433 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:10:18,702 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:10:18,729 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:18,729 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:10:18,731 INFO sqlalchemy.engine.Engine [cached since 42.51s ago] ()
+INFO:     127.0.0.1:58435 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:10:18,733 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:58466 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:10:25,401 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:25,402 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:10:25,402 INFO sqlalchemy.engine.Engine [cached since 49.18s ago] ()
+INFO:     127.0.0.1:58468 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58467 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:10:25,411 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:10:25,422 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:25,423 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:10:25,423 INFO sqlalchemy.engine.Engine [cached since 49.2s ago] ()
+INFO:     127.0.0.1:58469 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:10:25,431 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:10:31,092 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:31,094 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.is_creator = 1
+2026-03-21 22:10:31,095 INFO sqlalchemy.engine.Engine [generated in 0.00029s] ()
+2026-03-21 22:10:31,108 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,108 INFO sqlalchemy.engine.Engine [generated in 0.00040s] (1,)
+2026-03-21 22:10:31,114 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,114 INFO sqlalchemy.engine.Engine [generated in 0.00026s] (1,)
+2026-03-21 22:10:31,120 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,120 INFO sqlalchemy.engine.Engine [cached since 0.01221s ago] (2,)
+2026-03-21 22:10:31,126 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,127 INFO sqlalchemy.engine.Engine [cached since 0.01318s ago] (2,)
+2026-03-21 22:10:31,132 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,133 INFO sqlalchemy.engine.Engine [cached since 0.02466s ago] (3,)
+2026-03-21 22:10:31,134 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,135 INFO sqlalchemy.engine.Engine [cached since 0.02059s ago] (3,)
+2026-03-21 22:10:31,139 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,139 INFO sqlalchemy.engine.Engine [cached since 0.03085s ago] (4,)
+2026-03-21 22:10:31,144 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,145 INFO sqlalchemy.engine.Engine [cached since 0.03063s ago] (4,)
+INFO:     127.0.0.1:58492 - "GET /api/creators/ HTTP/1.1" 200 OK
+2026-03-21 22:10:31,147 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:10:31,155 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:31,156 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.is_creator = 1
+2026-03-21 22:10:31,156 INFO sqlalchemy.engine.Engine [cached since 0.06133s ago] ()
+2026-03-21 22:10:31,157 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,157 INFO sqlalchemy.engine.Engine [cached since 0.04949s ago] (1,)
+2026-03-21 22:10:31,159 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,159 INFO sqlalchemy.engine.Engine [cached since 0.04514s ago] (1,)
+2026-03-21 22:10:31,161 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,161 INFO sqlalchemy.engine.Engine [cached since 0.05278s ago] (2,)
+2026-03-21 22:10:31,162 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,162 INFO sqlalchemy.engine.Engine [cached since 0.04829s ago] (2,)
+2026-03-21 22:10:31,164 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,164 INFO sqlalchemy.engine.Engine [cached since 0.05594s ago] (3,)
+2026-03-21 22:10:31,165 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,165 INFO sqlalchemy.engine.Engine [cached since 0.05116s ago] (3,)
+2026-03-21 22:10:31,166 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:10:31,167 INFO sqlalchemy.engine.Engine [cached since 0.05874s ago] (4,)
+2026-03-21 22:10:31,169 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:10:31,169 INFO sqlalchemy.engine.Engine [cached since 0.05491s ago] (4,)
+INFO:     127.0.0.1:58493 - "GET /api/creators/ HTTP/1.1" 200 OK
+2026-03-21 22:10:31,171 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:58570 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:10:48,624 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:48,625 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:10:48,626 INFO sqlalchemy.engine.Engine [cached since 72.4s ago] ()
+INFO:     127.0.0.1:58573 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:58572 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:10:48,633 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:10:48,639 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:10:48,640 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:10:48,640 INFO sqlalchemy.engine.Engine [cached since 72.42s ago] ()
+INFO:     127.0.0.1:58574 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:10:48,650 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:59263 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:13:33,787 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:33,793 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:13:33,793 INFO sqlalchemy.engine.Engine [cached since 237.9s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59265 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59264 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:13:33,857 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:13:33,864 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:33,864 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:13:33,864 INFO sqlalchemy.engine.Engine [cached since 238s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59266 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:13:33,883 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:13:33,902 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:33,904 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:13:33,904 INFO sqlalchemy.engine.Engine [cached since 237.7s ago] ()
+INFO:     127.0.0.1:59267 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:13:33,921 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:13:33,955 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:33,956 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:13:33,956 INFO sqlalchemy.engine.Engine [cached since 237.7s ago] ()
+INFO:     127.0.0.1:59267 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:13:33,970 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:59304 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:13:40,187 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:40,187 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:13:40,187 INFO sqlalchemy.engine.Engine [cached since 244.3s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59305 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:13:40,192 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:59306 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:13:40,238 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:40,240 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:13:40,241 INFO sqlalchemy.engine.Engine [cached since 244.4s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59307 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:13:40,256 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:13:40,329 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:40,329 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:13:40,329 INFO sqlalchemy.engine.Engine [cached since 244.1s ago] ()
+INFO:     127.0.0.1:59308 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:13:40,338 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:13:40,490 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:13:40,490 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:13:40,491 INFO sqlalchemy.engine.Engine [cached since 244.3s ago] ()
+INFO:     127.0.0.1:59308 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:13:40,501 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:14:08,459 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:14:08,461 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:14:08,461 INFO sqlalchemy.engine.Engine [cached since 272.6s ago] ('bekaadburaimov@gmail.com',)
+2026-03-21 22:14:08,468 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     127.0.0.1:59431 - "POST /api/auth/oauth HTTP/1.1" 200 OK
+2026-03-21 22:14:08,499 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:14:08,499 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:14:08,499 INFO sqlalchemy.engine.Engine [cached since 272.6s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59433 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:14:08,502 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:59435 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59437 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:14:08,753 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:14:08,753 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:14:08,753 INFO sqlalchemy.engine.Engine [cached since 272.5s ago] ()
+INFO:     127.0.0.1:59439 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:14:08,757 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:14:08,761 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:14:08,762 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:14:08,762 INFO sqlalchemy.engine.Engine [cached since 272.5s ago] ()
+INFO:     127.0.0.1:59440 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:14:08,767 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:14:51,010 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:14:51,013 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:14:51,014 INFO sqlalchemy.engine.Engine [cached since 315.2s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59622 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:14:51,039 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:14:51,096 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:14:51,099 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:14:51,100 INFO sqlalchemy.engine.Engine [cached since 315.2s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:59623 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:14:51,107 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:59826 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:15:40,212 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:15:40,213 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:15:40,213 INFO sqlalchemy.engine.Engine [cached since 364s ago] ()
+INFO:     127.0.0.1:59829 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:59828 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:15:40,228 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:15:40,239 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:15:40,239 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:15:40,239 INFO sqlalchemy.engine.Engine [cached since 364s ago] ()
+INFO:     127.0.0.1:59830 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:15:40,242 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:16:14,143 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:16:14,144 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:16:14,145 INFO sqlalchemy.engine.Engine [cached since 398.3s ago] ('bekaadburaimov@gmail.com',)
+2026-03-21 22:16:14,151 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.id IN (?)
+2026-03-21 22:16:14,152 INFO sqlalchemy.engine.Engine [generated in 0.00130s] (1,)
+2026-03-21 22:16:14,159 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.id = ?
+2026-03-21 22:16:14,159 INFO sqlalchemy.engine.Engine [generated in 0.00043s] (8,)
+2026-03-21 22:16:14,161 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:59970 - "POST /api/orders/checkout HTTP/1.1" 400 Bad Request
+2026-03-21 22:25:33,031 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:25:33,041 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.is_creator = 1
+2026-03-21 22:25:33,041 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] ()
+2026-03-21 22:25:33,051 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,051 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (1,)
+2026-03-21 22:25:33,054 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,054 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (1,)
+2026-03-21 22:25:33,056 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,057 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (2,)
+2026-03-21 22:25:33,058 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,058 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (2,)
+2026-03-21 22:25:33,059 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,059 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (3,)
+2026-03-21 22:25:33,060 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,060 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (3,)
+2026-03-21 22:25:33,062 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,062 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (4,)
+2026-03-21 22:25:33,066 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,066 INFO sqlalchemy.engine.Engine [cached since 901.9s ago] (4,)
+INFO:     127.0.0.1:62200 - "GET /api/creators/ HTTP/1.1" 200 OK
+2026-03-21 22:25:33,072 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:25:33,087 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:25:33,155 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.is_creator = 1
+2026-03-21 22:25:33,156 INFO sqlalchemy.engine.Engine [cached since 902s ago] ()
+2026-03-21 22:25:33,158 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,158 INFO sqlalchemy.engine.Engine [cached since 902s ago] (1,)
+2026-03-21 22:25:33,160 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,161 INFO sqlalchemy.engine.Engine [cached since 902s ago] (1,)
+2026-03-21 22:25:33,162 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,163 INFO sqlalchemy.engine.Engine [cached since 902s ago] (2,)
+2026-03-21 22:25:33,167 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,167 INFO sqlalchemy.engine.Engine [cached since 902s ago] (2,)
+2026-03-21 22:25:33,169 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,169 INFO sqlalchemy.engine.Engine [cached since 902s ago] (3,)
+2026-03-21 22:25:33,172 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,172 INFO sqlalchemy.engine.Engine [cached since 902s ago] (3,)
+2026-03-21 22:25:33,174 INFO sqlalchemy.engine.Engine SELECT count(assets.id) AS count_1 
+FROM assets 
+WHERE assets.author_id = ? AND assets.is_approved = 1
+2026-03-21 22:25:33,174 INFO sqlalchemy.engine.Engine [cached since 902s ago] (4,)
+2026-03-21 22:25:33,175 INFO sqlalchemy.engine.Engine SELECT count(subscriptions.id) AS count_1 
+FROM subscriptions 
+WHERE subscriptions.author_id = ?
+2026-03-21 22:25:33,175 INFO sqlalchemy.engine.Engine [cached since 902s ago] (4,)
+INFO:     127.0.0.1:62201 - "GET /api/creators/ HTTP/1.1" 200 OK
+2026-03-21 22:25:33,177 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:62204 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:25:36,254 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:25:36,254 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:25:36,254 INFO sqlalchemy.engine.Engine [cached since 960s ago] ()
+INFO:     127.0.0.1:62206 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62205 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:25:36,274 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:25:36,293 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:25:36,295 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:25:36,295 INFO sqlalchemy.engine.Engine [cached since 960.1s ago] ()
+INFO:     127.0.0.1:62207 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:25:36,299 INFO sqlalchemy.engine.Engine ROLLBACK
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18732]
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+/Users/macbook/.gemini/antigravity/scratch/ai-asset-marketplace/backend/routers/ai_search.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:     Started server process [19093]
+INFO:     Waiting for application startup.
+2026-03-21 22:26:59,948 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:26:59,949 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2026-03-21 22:26:59,949 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:26:59,950 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("subscriptions")
+2026-03-21 22:26:59,950 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:26:59,951 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("assets")
+2026-03-21 22:26:59,951 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:26:59,952 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("transactions")
+2026-03-21 22:26:59,952 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:26:59,952 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("purchases")
+2026-03-21 22:26:59,952 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:26:59,953 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     Application startup complete.
+/Users/macbook/.gemini/antigravity/scratch/ai-asset-marketplace/backend/routers/ai_search.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:     Started server process [19094]
+INFO:     Waiting for application startup.
+2026-03-21 22:27:07,251 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:27:07,251 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2026-03-21 22:27:07,252 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:27:07,253 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("subscriptions")
+2026-03-21 22:27:07,253 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:27:07,254 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("assets")
+2026-03-21 22:27:07,254 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:27:07,255 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("transactions")
+2026-03-21 22:27:07,255 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:27:07,256 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("purchases")
+2026-03-21 22:27:07,256 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:27:07,257 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     Application startup complete.
+AI SEARCH ERROR: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+INFO:     127.0.0.1:62246 - "POST /api/ai-search/ HTTP/1.1" 500 Internal Server Error
+WARNING:  StatReload detected changes in 'routers/ai_search.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19094]
+INFO:     Started server process [19266]
+INFO:     Waiting for application startup.
+2026-03-21 22:32:45,456 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:32:45,457 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2026-03-21 22:32:45,457 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:32:45,461 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("subscriptions")
+2026-03-21 22:32:45,462 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:32:45,473 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("assets")
+2026-03-21 22:32:45,475 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:32:45,489 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("transactions")
+2026-03-21 22:32:45,489 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:32:45,490 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("purchases")
+2026-03-21 22:32:45,493 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-03-21 22:32:45,506 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     Application startup complete.
+AI SEARCH (GROQ) ERROR: type object 'Asset' has no attribute 'tags'
+INFO:     127.0.0.1:62305 - "POST /api/ai-search/ HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:62430 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:34:43,360 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:34:43,399 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:34:43,400 INFO sqlalchemy.engine.Engine [generated in 0.00228s] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62433 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62431 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:34:43,411 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:34:43,419 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:34:43,419 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:34:43,419 INFO sqlalchemy.engine.Engine [cached since 0.02184s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62435 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:34:43,424 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:34:44,091 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:34:44,098 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:34:44,098 INFO sqlalchemy.engine.Engine [generated in 0.00060s] ()
+INFO:     127.0.0.1:62440 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:34:44,115 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:34:44,127 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:34:44,128 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:34:44,128 INFO sqlalchemy.engine.Engine [cached since 0.03004s ago] ()
+INFO:     127.0.0.1:62441 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:34:44,132 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:62686 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 22:58:13,843 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:58:13,849 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:58:13,849 INFO sqlalchemy.engine.Engine [cached since 1410s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62689 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62687 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:58:13,870 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:58:13,885 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:58:13,886 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 22:58:13,886 INFO sqlalchemy.engine.Engine [cached since 1410s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62691 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 22:58:13,893 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:58:14,004 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:58:14,005 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:58:14,006 INFO sqlalchemy.engine.Engine [cached since 1410s ago] ()
+INFO:     127.0.0.1:62692 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:58:14,016 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 22:58:14,026 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 22:58:14,027 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 22:58:14,027 INFO sqlalchemy.engine.Engine [cached since 1410s ago] ()
+INFO:     127.0.0.1:62693 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 22:58:14,034 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:62787 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 23:07:54,527 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:07:54,527 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 23:07:54,528 INFO sqlalchemy.engine.Engine [cached since 1911s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62789 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62788 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 23:07:54,532 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 23:07:54,537 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:07:54,538 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 23:07:54,538 INFO sqlalchemy.engine.Engine [cached since 1911s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62791 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 23:07:54,545 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 23:07:54,555 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:07:54,556 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 23:07:54,556 INFO sqlalchemy.engine.Engine [cached since 1911s ago] ()
+INFO:     127.0.0.1:62792 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 23:07:54,566 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 23:07:54,570 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:07:54,570 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 23:07:54,570 INFO sqlalchemy.engine.Engine [cached since 1911s ago] ()
+INFO:     127.0.0.1:62793 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 23:07:54,577 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:62931 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+2026-03-21 23:25:11,968 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:25:11,968 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 23:25:11,968 INFO sqlalchemy.engine.Engine [cached since 2726s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62934 - "GET /api/assets HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62932 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 23:25:11,981 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 23:25:11,986 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:25:11,987 INFO sqlalchemy.engine.Engine SELECT users.id, users.name, users.email, users.hashed_password, users.balance, users.avatar, users.is_creator, users.oauth_provider, users.created_at 
+FROM users 
+WHERE users.email = ?
+2026-03-21 23:25:11,987 INFO sqlalchemy.engine.Engine [cached since 2726s ago] ('bekaadburaimov@gmail.com',)
+INFO:     127.0.0.1:62935 - "GET /api/auth/me HTTP/1.1" 200 OK
+2026-03-21 23:25:11,990 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 23:25:12,220 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:25:12,221 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 23:25:12,222 INFO sqlalchemy.engine.Engine [cached since 2725s ago] ()
+INFO:     127.0.0.1:62936 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 23:25:12,228 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-03-21 23:25:12,233 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-03-21 23:25:12,234 INFO sqlalchemy.engine.Engine SELECT assets.id, assets.title, assets.description, assets.price, assets.image_url, assets.category, assets.author_name, assets.author_id, assets.is_approved, assets.created_at 
+FROM assets 
+WHERE assets.is_approved = 1
+2026-03-21 23:25:12,234 INFO sqlalchemy.engine.Engine [cached since 2725s ago] ()
+INFO:     127.0.0.1:62937 - "GET /api/assets/ HTTP/1.1" 200 OK
+2026-03-21 23:25:12,240 INFO sqlalchemy.engine.Engine ROLLBACK
+WARNING:  StatReload detected changes in 'routers/ai_search.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19266]
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000010ff73600 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000011bc8a600 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000104036600 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'routers/ai_search.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000011409f600 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'routers/ai_search.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000010fdcc600 (most recent call first):
+  <no Python frame>
